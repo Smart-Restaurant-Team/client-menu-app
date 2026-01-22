@@ -28,9 +28,21 @@ export default function RootLayout({
 }>) {
   return (
     <html>
+      <head>
+        {/* <meta property="og:image" content="<generated>" />
+        <meta property="og:image:alt" content="About Acme" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" /> */}
+        <meta property="og:type" content="website"/>
+<meta property="og:title" content="My app"/>
+<meta property="og:url" content=""/>
+<meta property="og:image" content="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="></meta>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        
         <main className="h-screen sm:w-xl border rounded-2xl bg-white mx-auto overflow-hidden">
           <div className="">
             {children}

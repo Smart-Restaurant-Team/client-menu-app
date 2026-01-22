@@ -1,5 +1,10 @@
-export default function DishDetailsPage (){
-    return (
+import { getDishDetails } from "@/api/dishes"
+
+export default async function  DishDetailsPage ({params} : {params: {dishId: string}}){
+  
+  const data = await getDishDetails({dishId: "1254"})
+  
+  return (
         <>
         {/* Reusable component so you don't duplicate code */}
       <h1 className="font-medium text-5xl capitalize">

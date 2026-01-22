@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import { HouseIcon, FavoriteIcon, MenuIcon, SearchIcon} from "@assets/icons/phosphor_icons";
+import { HouseIcon, FavoriteIcon, MenuIcon, SearchIcon} from "@/assets/icons/phosphor_icons";
 // import { FavoriteIcon, HouseIcon } from "../assets/icons/phosphor_icons";
 import '@styles/theme.css';
 import { useSelectedLayoutSegment, useSelectedLayoutSegments } from "next/navigation";

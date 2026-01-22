@@ -31,8 +31,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
-        {modal}
+        <main className="h-screen sm:w-xl border rounded-2xl bg-white mx-auto overflow-hidden">
+          <div className="">
+            {children}
+            {modal}
+          </div>
+        </main>
         {/* <Navbar /> */}
       </body>
     </html>

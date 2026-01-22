@@ -19,7 +19,11 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"] // This ensures @ starts looking inside src
+      "@/*": ["./src/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@assets/*": ["./src/app/assets/*"], 
+      "@components/*": ["./src/app/components/*"], 
+      "@styles/*": ["./src/app/styles/*"]
     }
   },
   "include": [

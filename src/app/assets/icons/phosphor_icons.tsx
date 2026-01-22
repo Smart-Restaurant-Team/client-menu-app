@@ -1,3 +1,4 @@
+"use client"
 import { HeartIcon , MagnifyingGlassIcon, HouseLineIcon, BookOpenIcon, InfoIcon, BookOpenTextIcon} from "@phosphor-icons/react"
 
 const FavoriteIcon =  HeartIcon

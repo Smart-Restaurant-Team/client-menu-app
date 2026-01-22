@@ -2,7 +2,7 @@ import axios from "axios";
 import { cookies } from "next/headers";
 
 const serverAxios = axios.create({
-  baseURL: process.env.API_URL,
+  baseURL: "https://unamalgamable-li-proterandrously.ngrok-free.dev/menu_service",
   headers: {
     "Content-Type": "application/json",
     "Accept-Language": "en"

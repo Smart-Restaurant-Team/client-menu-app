@@ -3,6 +3,7 @@ import CategoriesList from "@/components/blocks/categories"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Suspense } from "react"
+export const dynamic = 'force-dynamic';
 
 export default async function Home() {
     const data = await getCategories({restaurantId: "6936d68d642389dd0f00d9ab"})
@@ -29,9 +30,11 @@ export default async function Home() {
                 <Button type="button" className="absolute right-1">Search</Button>
             </div>
         </form>
-        <Suspense fallback={<>...</>}>
+        {data && 
             <CategoriesList data={data}/>
-        </Suspense>
+        }
+        {/* <Suspense fallback={<>...</>}> */}
+        {/* </Suspense> */}
         {/* <CategoriesList data={data}/> */}
     </div>
     </>)

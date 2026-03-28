@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useParams } from "next/navigation"; // Added useParams
 import { cn } from "@/lib/utils"; 
-import { FavoriteIcon, HouseIcon, MenuIcon, SearchIcon, AboutInfoIcon} from "@/app/assets/icons/phosphor_icons";
+import { FavoriteIcon, HouseIcon, MenuIcon, SearchIcon, AboutInfoIcon} from "@/assets/icons/phosphor_icons";
 
 export function Navbar() {
   const pathname = usePathname();
